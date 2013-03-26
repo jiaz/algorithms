@@ -4,6 +4,11 @@
 #include <stdlib.h>
 #include <ctime>
 #include <iostream>
+#include <cstring>
+#include <stack>
+#include <queue>
+
+using namespace std;
 
 template<class T>
 void printArray(T *array, size_t size) {
