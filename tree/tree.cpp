@@ -25,8 +25,8 @@ TreeNode *buildTree(const char *preorder, const char *inorder, size_t len) {
 }
 
 void printTree(const TreeNode *root, int depth) {
+  if (root == NULL) return;
   for (int i = 0; i < depth; ++i) cout << "  ";
-  if (root == NULL) {cout << "{}" << endl; return;}
   cout << (root == NULL ? ' ' : root->value) << " {" << endl;
   if (root != NULL) {
     printTree(root->children[0], depth+1);
